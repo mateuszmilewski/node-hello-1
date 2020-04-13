@@ -19,7 +19,7 @@ exports.sniffOn = function(server) {
     // };
     
 	// Zgłaszane po zamknięciu serwera
-    server.on('close', errno => { util.log('Błąd zamykania='+ errno); });
+    server.on('close', errno => { util.log('err no 17: '+ errno); });
 
 	// Zgłaszane po otrzymaniu żądania http Expect: 100-continue.
 	// Jeśli kod nie obsługuje tego zdarzenia, serwer automatycznie
